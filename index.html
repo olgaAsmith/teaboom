@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ананасовый улун — светлый фуцзяньский чай с ароматом ананаса. Карточка товара интернет-магазина Чайный Бум."
+    />
+    <title>Ананасовый улун - Чайный Бум</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <p class="site-logo">Чайный Бум</p>
+        <p class="site-tagline">Интернет-магазин чая и посуды</p>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container">
+        <nav class="product-category" aria-label="Категории">
+          <ol class="product-category__list">
+            <li>Улун</li>
+            <li>Ароматизированный улун</li>
+            <li>Китайский ароматизированный улун</li>
+            <li>Китайский светлый ароматизированный улун</li>
+            <li aria-current="page">Ананасовый улун</li>
+          </ol>
+        </nav>
+
+        <article class="product-card">
+          <figure class="product-image">
+            <img
+              src="assets/images/ananasovyj-ulun.jpg"
+              alt="Ананасовый улун — светлый фуцзяньский чай с ароматом ананаса"
+              width="800"
+              height="800"
+              decoding="async"
+              fetchpriority="high"
+            />
+          </figure>
+
+          <div class="product-info">
+            <h1 class="product-title">Ананасовый улун</h1>
+            <p class="product-article" aria-live="polite">
+              Артикул:
+              <span id="product-article">01306</span>
+            </p>
+
+            <fieldset class="product-packages">
+              <legend class="product-packages__legend">Фасовка</legend>
+              <ul class="product-packages__list" id="product-packages"></ul>
+            </fieldset>
+
+            <div class="product-price" aria-live="polite">
+              <p class="product-price__current">
+                <span id="product-price">326,40 ₽</span>
+              </p>
+              <p class="product-price__old" id="product-old-price-wrap">
+                <del id="product-old-price">349,20 ₽</del>
+              </p>
+            </div>
+
+            <div class="product-actions">
+              <button
+                class="product-cart product-btn"
+                type="button"
+                id="add-to-cart"
+              >
+                В корзину
+              </button>
+              <div
+                class="product-qty"
+                id="product-qty"
+                aria-hidden="true"
+                aria-label="Количество в корзине"
+              >
+                <button
+                  class="product-qty__btn"
+                  type="button"
+                  id="qty-minus"
+                  aria-label="Уменьшить количество на 1"
+                >
+                  <svg
+                    class="product-qty__icon"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path d="M3.5 8h9" />
+                  </svg>
+                </button>
+                <span class="product-qty__value" id="cart-qty" aria-live="polite">0</span>
+                <button
+                  class="product-qty__btn"
+                  type="button"
+                  id="qty-plus"
+                  aria-label="Увеличить количество на 1"
+                >
+                  <svg
+                    class="product-qty__icon"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path d="M8 3.5v9M3.5 8h9" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <section
+            class="product-description"
+            aria-labelledby="description-title"
+          >
+            <h2 class="product-description__title" id="description-title">
+              Описание
+            </h2>
+            <p>
+              Состав: китайский бирюзовый чай, цукаты, натуральные ароматические
+              масла. Светлый фуцзяньский улун с ароматом ананаса. В сухом виде —
+              красивый крупный лист изумрудного цвета, скруткой напоминающий Те
+              Гуань Инь. В прогретой посуде аромат свежей весенней зелени и
+              спелого ананаса.
+            </p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>TEA BOOM. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
